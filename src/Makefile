@@ -39,9 +39,6 @@ $(LIBRARY): $(SRC)
 %.o : %.c
 	$(CC) -c $< -o $@
 
-f : $(SRC)
-	$(CC)  $(SRC) $(TEST_FLAGS)  -o test 
-	./test
 build_file: 
 	mkdir Build
 $(CLEAN) :
