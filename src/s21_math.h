@@ -1,8 +1,8 @@
+#include <float.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
-#include <float.h>
 #define POS_INF 1.0 / 0.0
 #define NEG_INF -1.0 / 0.0
 #define s21_NAN 0.0 / 0.0

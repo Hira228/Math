@@ -23,7 +23,6 @@ Suite *s21_abs_suite() {
   tc_s21_abs = tcase_create("s21_abs");
   tcase_add_test(tc_s21_abs, test_s21_math_abs);
   suite_add_tcase(s, tc_s21_abs);
-  
 
   return s;
 }

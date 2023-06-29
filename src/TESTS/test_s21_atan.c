@@ -15,7 +15,7 @@ START_TEST(test_s21_math_atan) {
   double testValue8 = PI * 0.5;
   double testValue9 = -PI * 0.5;
   double testValue10 = PI;
-//  double testValue11 = NAN;
+  //  double testValue11 = NAN;
   double testValue12 = -NAN;
   double testValue13 = INFINITY;
   double testValue14 = -INFINITY;
@@ -31,7 +31,8 @@ START_TEST(test_s21_math_atan) {
   ck_assert(s21_is_nan(s21_atan(testValue8)) == s21_is_nan(atan(testValue8)));
   ck_assert(s21_is_nan(s21_atan(testValue9)) == s21_is_nan(atan(testValue9)));
   ck_assert(s21_is_nan(s21_atan(testValue10)) == s21_is_nan(atan(testValue10)));
- // ck_assert(s21_is_nan(s21_atan(testValue11)) == s21_is_nan(atan(testValue11)));
+  // ck_assert(s21_is_nan(s21_atan(testValue11)) ==
+  // s21_is_nan(atan(testValue11)));
   ck_assert(s21_is_nan(s21_atan(testValue12)) == s21_is_nan(atan(testValue12)));
   ck_assert(s21_is_nan(s21_atan(testValue13)) == s21_is_nan(atan(testValue13)));
   ck_assert(s21_is_nan(s21_atan(testValue14)) == s21_is_nan(atan(testValue14)));

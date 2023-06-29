@@ -22,7 +22,7 @@ START_TEST(test_s21_math_tan) {
   double testValue6 = PI * PI;
   double testValue7 = 100;
   double testValue8 = PI * 0.5;
-  //double testValue9 = -PI * 0.5;
+  // double testValue9 = -PI * 0.5;
   double testValue10 = PI;
   double testValue11 = NAN;
   double testValue12 = -NAN;
@@ -31,14 +31,14 @@ START_TEST(test_s21_math_tan) {
 
   ck_assert_ldouble_eq_tol(s21_tan(testValue1), tan(testValue1), 0.000001);
   ck_assert_ldouble_eq_tol(s21_tan(testValue2), tan(testValue2), 0.000001);
- // ck_assert_ldouble_eq_tol(s21_tan(testValue3), tan(testValue3), 0.000001);
- //ck_assert_ldouble_eq_tol(s21_tan(testValue4), tan(testValue4), 0.000001);
+  // ck_assert_ldouble_eq_tol(s21_tan(testValue3), tan(testValue3), 0.000001);
+  // ck_assert_ldouble_eq_tol(s21_tan(testValue4), tan(testValue4), 0.000001);
   ck_assert_ldouble_eq_tol(s21_tan(testValue5), tan(testValue5), 0.000001);
- ck_assert_ldouble_eq_tol(s21_tan(testValue6), tan(testValue6), 0.000001);
+  ck_assert_ldouble_eq_tol(s21_tan(testValue6), tan(testValue6), 0.000001);
   ck_assert_ldouble_eq_tol(s21_tan(testValue7), tan(testValue7), 0.000001);
- // ck_assert_float_eq_tol(s21_tan(testValue8), tan(testValue8), 0.000001);
- // ck_assert_float_eq_tol(s21_tan(testValue9), tan(testValue9), 0.000001);
- ck_assert_ldouble_eq_tol(s21_tan(testValue10), tan(testValue10), 0.000001);
+  // ck_assert_float_eq_tol(s21_tan(testValue8), tan(testValue8), 0.000001);
+  // ck_assert_float_eq_tol(s21_tan(testValue9), tan(testValue9), 0.000001);
+  ck_assert_ldouble_eq_tol(s21_tan(testValue10), tan(testValue10), 0.000001);
   ck_assert((s21_is_nan(s21_tan(testValue11))) ==
             (s21_is_nan(tan(testValue11))));
   ck_assert((s21_is_nan(s21_tan(testValue12))) ==

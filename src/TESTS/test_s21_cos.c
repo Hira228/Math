@@ -8,7 +8,7 @@ START_TEST(test_s21_math_cos) {
   ck_assert_float_eq(cos(13.54), s21_cos(13.54));
   ck_assert_float_eq(cos(0.0), s21_cos(0.0));
   ck_assert_float_eq(cos(1.0), s21_cos(1.0));
- // ck_assert_float_eq(cos(3.14), s21_cos(3.14));
+  // ck_assert_float_eq(cos(3.14), s21_cos(3.14));
   ck_assert_float_eq(cos(6.28), s21_cos(6.28));
   ck_assert_float_eq(cos(2.2343), s21_cos(2.2343));
   ck_assert_float_eq(cos(0.1234), s21_cos(0.1234));
@@ -18,13 +18,13 @@ START_TEST(test_s21_math_cos) {
   double testValue1 = 0;
   double testValue2 = 1;
   double testValue3 = 2 * 3.14;
-//  double testValue4 = -PI - 2;
+  //  double testValue4 = -PI - 2;
   double testValue5 = -2 * 3.14;
- // double testValue6 = PI * PI;
+  // double testValue6 = PI * PI;
   double testValue7 = -1;
   double testValue8 = PI * 0.5;
   double testValue9 = -PI * 0.5;
- // double testValue10 = PI;
+  // double testValue10 = PI;
   double testValue11 = NAN;
   double testValue12 = -NAN;
   double testValue13 = INFINITY;
@@ -34,13 +34,14 @@ START_TEST(test_s21_math_cos) {
   ck_assert_ldouble_eq_tol(s21_cos(testValue2), cos(testValue2), 0.000001);
 
   ck_assert(s21_is_nan(s21_cos(testValue3)) == s21_is_nan(cos(testValue3)));
-  //ck_assert(s21_is_nan(s21_cos(testValue4)) == s21_is_nan(cos(testValue4)));
+  // ck_assert(s21_is_nan(s21_cos(testValue4)) == s21_is_nan(cos(testValue4)));
   ck_assert(s21_is_nan(s21_cos(testValue5)) == s21_is_nan(cos(testValue5)));
- // ck_assert(s21_is_nan(s21_cos(testValue6)) == s21_is_nan(cos(testValue6)));
+  // ck_assert(s21_is_nan(s21_cos(testValue6)) == s21_is_nan(cos(testValue6)));
   ck_assert_ldouble_eq_tol(s21_cos(testValue7), cos(testValue7), 0.000001);
   ck_assert(s21_is_nan(s21_cos(testValue8)) == s21_is_nan(cos(testValue8)));
   ck_assert(s21_is_nan(s21_cos(testValue9)) == s21_is_nan(cos(testValue9)));
- // ck_assert(s21_is_nan(s21_cos(testValue10)) == s21_is_nan(cos(testValue10)));
+  // ck_assert(s21_is_nan(s21_cos(testValue10)) ==
+  // s21_is_nan(cos(testValue10)));
   ck_assert(s21_is_nan(s21_cos(testValue11)) == s21_is_nan(cos(testValue11)));
   ck_assert(s21_is_nan(s21_cos(testValue12)) == s21_is_nan(cos(testValue12)));
   ck_assert(s21_is_nan(s21_cos(testValue13)) == s21_is_nan(cos(testValue13)));

@@ -6,11 +6,11 @@ START_TEST(test_s21_math_sin) {
   }
   ck_assert_float_eq(sin(-13.54), s21_sin(-13.54));
   ck_assert_float_eq(sin(0.01), s21_sin(0.01));
- // ck_assert_float_eq(sin(PI - 0.01), s21_sin(PI - 0.01));
+  // ck_assert_float_eq(sin(PI - 0.01), s21_sin(PI - 0.01));
   ck_assert_float_eq(sin(13.54), s21_sin(13.54));
   ck_assert_float_eq(sin(0.0), s21_sin(0.0));
   ck_assert_float_eq(sin(1.0), s21_sin(1.0));
- // ck_assert_float_eq(sin(PI), s21_sin(PI));
+  // ck_assert_float_eq(sin(PI), s21_sin(PI));
   ck_assert_float_eq(sin(6.28), s21_sin(6.28));
   ck_assert_float_eq(sin(2.2343), s21_sin(2.2343));
   ck_assert_float_eq(sin(0.1234), s21_sin(0.1234));
@@ -49,14 +49,11 @@ START_TEST(test_s21_math_sin) {
   ck_assert_ldouble_eq_tol(s21_sin(testValue7), sin(testValue7), 0.000001);
   ck_assert(s21_is_nan(s21_sin(testValue8)) == s21_is_nan(sin(testValue8)));
   ck_assert(s21_is_nan(s21_sin(testValue9)) == s21_is_nan(sin(testValue9)));
-  ck_assert(s21_is_nan(s21_sin(testValue10)) ==
-  s21_is_nan(sin(testValue10))); ck_assert(s21_is_nan(s21_sin(testValue11))
-  == s21_is_nan(sin(testValue11)));
-  ck_assert(s21_is_nan(s21_sin(testValue12)) ==
-  s21_is_nan(sin(testValue12))); ck_assert(s21_is_nan(s21_sin(testValue13))
-  == s21_is_nan(sin(testValue13)));
-  ck_assert(s21_is_nan(s21_sin(testValue14)) ==
-  s21_is_nan(sin(testValue14)));
+  ck_assert(s21_is_nan(s21_sin(testValue10)) == s21_is_nan(sin(testValue10)));
+  ck_assert(s21_is_nan(s21_sin(testValue11)) == s21_is_nan(sin(testValue11)));
+  ck_assert(s21_is_nan(s21_sin(testValue12)) == s21_is_nan(sin(testValue12)));
+  ck_assert(s21_is_nan(s21_sin(testValue13)) == s21_is_nan(sin(testValue13)));
+  ck_assert(s21_is_nan(s21_sin(testValue14)) == s21_is_nan(sin(testValue14)));
 }
 END_TEST
 Suite *s21_sin_suite() {
